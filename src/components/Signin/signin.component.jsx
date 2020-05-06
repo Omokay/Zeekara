@@ -3,6 +3,7 @@ import './signin.style.scss';
 
 import FormInput from '../../components/FormInput/form-input.component';
 import CustomButton from '../../components/CustomButton/custom-button.component';
+import { signInWithGoogle } from '../../Firebase/firebase.utils';
 
 
 class Signin extends Component {
@@ -28,9 +29,9 @@ class Signin extends Component {
         this.setState({ [name]: value });
     };
 
-    
+
     render() {
-        
+
         return (
             <div className='sign-in'>
                 <h2>I already have an account</h2>
@@ -53,7 +54,10 @@ class Signin extends Component {
                         label='P assword'
                         required
                     />
-                    <CustomButton type='submit'>Sign in</CustomButton>
+                    <div className='buttons'>
+                        <CustomButton type='submit'>Sign in</CustomButton>
+                        <CustomButton onClick={signInWithGoogle} isGoogleSignIn>Sign in with Google</CustomButton>
+                    </div>
                 </form>
             </div>
         )
