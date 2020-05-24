@@ -10,5 +10,5 @@
         );
     }
 
-     return [...cartItems, { ...cartItemToAdd, quantity: 0 }];
+     return [...cartItems, { ...cartItemToAdd, quantity: 1 }];
 }; 
