@@ -16,8 +16,11 @@
     justify-content: center;
     padding: 10px 20px;
 
-    .name {
-      font-size: 16px;
+    span {
+      margin: 0 auto !important;
+      .name {
+        font-size: 16px;
+      }
     }
   }
 }

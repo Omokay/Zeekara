@@ -16,6 +16,10 @@
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    span{
+      margin: 50px auto;
+      font-size: 18px;
+    }
   }
 
   button {
