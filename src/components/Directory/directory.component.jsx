@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './directory.style.scss';
 import MenuItem from '../MenuItem/menuItem.component';
 import { createStructuredSelector } from 'reselect';
