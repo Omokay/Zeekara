@@ -1,9 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import Collections from '../../components/Collections/collections.component';
 import './category.styles.scss';
+import { selectCollectionsId } from '../../Redux/Shop/shop.selector';
 
 
-const Category = ({match}) => {
-    console.log(match);
+const Category = ({ collection }) => {
+    console.log("helloe");
     return (
         <div className='category'>
             <h2>Category</h2>
@@ -11,4 +14,10 @@ const Category = ({match}) => {
     )
 };
 
-export default Category;
+const mapStateToProps = (state, ownprops) => (
+    {
+        collection: selectCollectionsId(ownprops.match.params.categoryId)(state)
+    }
+)
+
+export default connect(mapStateToProps)(Category);

@@ -5,7 +5,7 @@ import Category from '../Category/category.component';
 
 const Shop = ({ match }) => (
     <div>
-        <Route exact path={`${match.path}`} componenet={CollectionsOverview}><CollectionsOverview /></Route>
+        <Route exact path={`${match.path}`} component={CollectionsOverview}><CollectionsOverview /></Route>
         <Route path={`${match.path}/:categoryId}`} component={Category}/>
     </div>
 );
