@@ -18,6 +18,6 @@ export const selectCollections = createSelector(
 );
 
 export const selectCollectionsId = collectionsUrlId => createSelector(
-    [selectShop],
+    [selectCollectionsId],
     collections => collections.find(collection => collection.id === COLLECTIONS_ID[collectionsUrlId])
-)
+);
