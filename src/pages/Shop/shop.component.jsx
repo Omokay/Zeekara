@@ -4,9 +4,9 @@ import CollectionsOverview from '../../components/CollectionsOverview/collection
 import Category from '../Category/category.component';
 
 const Shop = ({ match }) => (
-    <div>
-        <Route exact path={`${match.path}`} component={CollectionsOverview} />
-        <Route path={`${match.path}/:categoryId}`} component={Category}/>
+    <div className='shop-page'>
+        <Route exact path={`${match.path}`} component={CollectionsOverview}></Route>
+        <Route path={`${match.path}/:categoryId`} component={Category}/>
     </div>
 );
 
