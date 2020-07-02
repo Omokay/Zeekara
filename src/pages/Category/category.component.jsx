@@ -10,7 +10,7 @@ const Category = ({ collection }) => {
   const { title, items } = collection;
   console.log(items);
   return (
-      <div className='collection-preview'>
+      <div className='category'>
       <h1 className='title'>{title.toUpperCase()}</h1>
       <div className='items'>
         {items.map(item => (
